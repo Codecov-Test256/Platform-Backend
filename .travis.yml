@@ -1,4 +1,4 @@
 language: java
 after_success:
-  - export CODACY_PROJECT_TOKEN=e11109f1f9fc42e795b47b374be493ad
-  - bash <(curl -Ls https://coverage.codacy.com/get.sh)
+  - export CODECOV_TOKEN=85ebba88-15c6-4b07-b105-59471ab11825
+  - bash <(curl -s https://codecov.io/bash)
