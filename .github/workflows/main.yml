@@ -14,8 +14,3 @@ jobs:
             java-version: 11
       - name: Build with Maven
         run: mvn jacoco:report-aggregate
-      - name: Run codacy-coverage-reporter
-        uses: codacy/codacy-coverage-reporter-action@master
-        with:
-          project-token: ${{ secrets.CODACY_TOKEN }}
-          coverage-reports: ../Platform-Backend/target/site/jacoco-aggregate/jacoco.xml
