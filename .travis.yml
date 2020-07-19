@@ -1,4 +1,4 @@
 language: java
-export CODACY_PROJECT_TOKEN=${{secrets.CODACY_TOKEN}}
+export CODACY_PROJECT_TOKEN=e11109f1f9fc42e795b47b374be493ad
 after_success:
   - bash <(curl -Ls https://coverage.codacy.com/get.sh)
